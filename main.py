@@ -1,10 +1,9 @@
-from menu import get_menu_dictionary
+from menu import MENU  
 from order_system import place_order
 from receipt import print_itemized_receipt, print_receipt_heading, print_receipt_footer
 
 def main():
-    meals = get_menu_dictionary()
-    order, total_price = place_order(meals)
+    order, total_price = place_order(MENU)  
 
     print("\nThis is what we are preparing for you.\n")
     print_receipt_heading()
