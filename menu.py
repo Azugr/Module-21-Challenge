@@ -1,29 +1,34 @@
-MENU = {
-    "Burritos": [
-        {"name": "Burrito - Chicken", "price": 4.49},
-        {"name": "Burrito - Beef", "price": 5.49},
-        {"name": "Burrito - Vegetarian", "price": 3.99}
-    ],
-    "Rice Bowls": [
-        {"name": "Rice Bowl - Teriyaki Chicken", "price": 9.99},
-        {"name": "Rice Bowl - Sweet and Sour Pork", "price": 8.99}
-    ],
-    "Sushi": [
-        {"name": "Sushi - California Roll", "price": 7.49},
-        {"name": "Sushi - Spicy Tuna Roll", "price": 8.49}
-    ],
-    "Noodles": [
-        {"name": "Noodles - Pad Thai", "price": 6.99},
-        {"name": "Noodles - Lo Mein", "price": 7.99},
-        {"name": "Noodles - Mee Goreng", "price": 8.99}
-    ],
-    "Pizza": [
-        {"name": "Pizza - Cheese", "price": 8.99},
-        {"name": "Pizza - Pepperoni", "price": 10.99},
-        {"name": "Pizza - Vegetarian", "price": 9.99}
-    ],
-    "Burgers": [
-        {"name": "Burger - Chicken", "price": 7.49},
-        {"name": "Burger - Beef", "price": 8.49}
-    ]
-}
+def get_menu_dictionary():
+    """
+    Returns a dictionary of menu items and their prices.
+    """
+    meals = {
+        "Burrito": {
+            "Chicken": 4.49,
+            "Beef": 5.49,
+            "Vegetarian": 3.99
+        },
+        "Rice Bowl": {
+            "Teriyaki Chicken": 9.99,
+            "Sweet and Sour Pork": 8.99
+        },
+        "Sushi": {
+            "California Roll": 7.49,
+            "Spicy Tuna Roll": 8.49
+        },
+        "Noodles": {
+            "Pad Thai": 6.99,
+            "Lo Mein": 7.99,
+            "Mee Goreng": 8.99
+        },
+        "Pizza": {
+            "Cheese": 8.99,
+            "Pepperoni": 10.99,
+            "Vegetarian": 9.99
+        },
+        "Burger": {
+            "Chicken": 7.49,
+            "Beef": 8.49
+        }
+    }
+    return meals
