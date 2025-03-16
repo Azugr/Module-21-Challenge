@@ -7,6 +7,7 @@ def place_order(menu):
     menu_items = get_menu_items_dict(menu)
     print("Welcome to the Generic Take Out Restaurant.\n")
     
+    
     while True:
         print_menu_heading()
         for index, item in menu_items.items():
@@ -30,7 +31,7 @@ def update_order(order, menu_selection, menu_items):
     Checks if the customer menu selection is valid, then updates the order.
     """
     if not menu_selection.isdigit() or int(menu_selection) not in menu_items:
-        print("\nThat was not a menu option.\n")
+        print(f"\n{menu_selection} was not a menu option.\n")
         return order
     
     menu_selection = int(menu_selection)
